@@ -2,5 +2,25 @@
 
 ## Frameworks
 
-In robotics, a **reference frame** (or **coordinate system**) is a set of axes (typically **X**, **Y**, and **Z**) used to define the position and orientation of an object or a set of objects in three-dimensional space. It is essential for describing the movement and interactions of a robot, as it provides a context for measuring the coordinates of points, vectors, and transformations.
+In robotics, a **reference frame** (or **coordinate system**) is a set of axes (typically **X**, **Y**, and **Z**) used to define the position and orientation of an object or a set of objects in three-dimensional space. It is essential for describing the movement and interactions of a robot, as it provides a context for measuring the coordinates of points, vectors, and transformations. Two of the most common coordinate systems are **right-handed** and **left-handed**, which mainly differ in the orientation of their axes. These terms come from the **right-hand** and **left-hand** rules, respectively, which define the direction of the axes in a three-dimensional system.
+<div style="text-align: center;">
+<figure>
+<img src="../Images/00_Spatial.png" width="300"/>
+<figcaption style="font-size: 10px">1.1 Frameworks</figcaption>
+</figure>
+</div>
 
+A **right-handed coordinate system** follows the right-hand rule, in which the axes are arranged such that if you point the thumb, index, and middle fingers of your right hand, the three axes (X, Y, Z) will align with the fingers. This system is widely used in robotics, mathematics, and physics applications. 
+We consider three unit vectors, **i**, **j**, and **k**, which represent the X, Y, and Z axes, respectively.
+
+The relationship between these vectors is described using the cross product to ensure that the axes follow the correct orientation:
+
+The vector **k** (Z axis) is defined as the cross product of **i** and **j**:
+
+$$\mathbf{k} = \mathbf{i} \times \mathbf{j}$$
+
+In general, this cross product ensures that the three vectors are perpendicular to each other and respect the right-hand rule orientation.
+
+On the other hand, a **left-handed coordinate system** follows the left-hand rule, where the axes are oriented in the opposite direction. Although less common than the right-handed system, the left-handed system is used in some applications, such as certain 3D graphics systems and specific simulation models.
+
+These coordinate systems are crucial for defining and controlling the orientation and movement of robots, and the choice between a right-handed or left-handed system can have a significant impact on the design and programming of robotic algorithms.
