@@ -18,3 +18,11 @@ The Peter Corke toolbox can be downloaded from [**this page**](https://petercork
 
 * In the directory explorer, locate the **rvctools** folder and select it. Then, save and close the path window.
 <img src="../Images/03_SWSetup.png" width="600"/>
+
+### MATLAB
+
+* Download the RTB10.4.mltbx file<br>
+<img src="../Images/04_SWSetup.png" width="300"/>
+
+* Execute the file and install 
+
