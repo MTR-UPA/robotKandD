@@ -8,7 +8,6 @@ The Peter Corke toolbox can be downloaded from [**this page**](https://petercork
 ## Steps to install the toolbox
 ### GNU Octave
 Go to the latest version of the toolbox and download the **"rvctools"** folder and unzip it.
-
 <img src="../Images/00_SWSetup.png" width="600"/>
 
 Open **GNU Octave** and go to **Edit → Set Path...**
