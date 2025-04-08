@@ -9,13 +9,13 @@ The Peter Corke toolbox can be downloaded from [**this page**](https://petercork
 ### GNU Octave
 Go to the latest version of the toolbox and download the **"rvctools"** folder and unzip it.
 
-<img src="../Images/00_SWSetup.png" width="400"/>
+<img src="../Images/00_SWSetup.png" width="600"/>
 
 Open **GNU Octave** and go to **Edit → Set Path...**
-<img src="../Images/01_SWSetup.png" width="400"/>
+<img src="../Images/01_SWSetup.png" width="600"/>
 
 A window will open where you should select **Add Directory → Directory with Subdirectories**.
-<img src="../Images/02_SWSetup.png" width="400"/>
+<img src="../Images/02_SWSetup.png" width="600"/>
 
 In the directory explorer, locate the **rvctools** folder and select it. Then, save and close the path window.
-<img src="../Images/03_SWSetup.png" width="400"/>
+<img src="../Images/03_SWSetup.png" width="600"/>
