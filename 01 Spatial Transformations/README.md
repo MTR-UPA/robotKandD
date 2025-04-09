@@ -8,6 +8,8 @@ In robotics, a **reference frame** (or **coordinate system**) is a set of axes (
 <small>Dextrorotative and Levorotative Systems</small>
 </div>
 
+To generate the image above, you can run the `FramesConvention` script.
+
 ## Dextrorotative System
 A **right-handed coordinate system** follows the right-hand rule, in which the axes are arranged such that if you point the thumb, index, and middle fingers of your right hand, the three axes (X, Y, Z) will align with the fingers. This system is widely used in robotics, mathematics, and physics applications. 
 We consider three unit vectors, **i**, **j**, and **k**, which represent the X, Y, and Z axes, respectively.
@@ -60,26 +62,36 @@ A **3D rotation matrix** \( R \) satisfies the following properties:
 <img src="../Images/Spatial/01_Spatial.png" width="300"/><br \>
 </div>
 
+
+The following image illustrates the result of rotating a reference frame by 30 degrees about the X-axis, along with the corresponding rotation matrix. Note that the direction of rotation follows the right-hand rule.
+
 <div align="center">
 <img src="../Images/Spatial/02_Spatial.png" width="500"/><br \>
 <small>X rotation by 30 degrees</small>
 </div>
 
+To generate the image above, you can run the `XRotation` script. I encourage you to modify the rotation angle and observe how the reference frame and its corresponding rotation matrix change.
 
 #### 2. Rotation about the **Y-axis**:
 
-$R_x(\theta) = \begin{bmatrix}1 &0 & 0 \\0 & \cos\theta & -\sin\theta \\0 & \sin\theta & \cos\theta \end{bmatrix}$ 
+<div align="center">
+<img src="../Images/Spatial/03_Spatial.png" width="300"/><br \>
+</div>
 
-\[
-R_y(\theta) =
-\begin{pmatrix}
-\cos\theta & 0 & \sin\theta \\
-0 & 1 & 0 \\
--\sin\theta & 0 & \cos\theta
-\end{pmatrix}
-\]
+
+The following image illustrates the result of rotating a reference frame by 30 degrees about the Y-axis, along with the corresponding rotation matrix. Note that the direction of rotation follows the right-hand rule.
+
+<div align="center">
+<img src="../Images/Spatial/04_Spatial.png" width="500"/><br \>
+<small>X rotation by 30 degrees</small>
+</div>
+
+To generate the image above, you can run the `YRotation` script. I encourage you to modify the rotation angle and observe how the reference frame and its corresponding rotation matrix change.
 
 #### 3. Rotation about the **Z-axis**:
+
+
+$R_y(\theta) = \begin{bmatrix}\cos\theta &0 & \sin\theta \\0 & 1 & 0 \\-\sin\theta & 0 & \cos\theta \end{bmatrix}$ 
 \[
 R_z(\theta) =
 \begin{pmatrix}
