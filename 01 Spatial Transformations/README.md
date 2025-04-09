@@ -57,11 +57,10 @@ A **3D rotation matrix** \( R \) satisfies the following properties:
 #### 1. Rotation about the **X-axis**:
 
 <div align="center">
-<img src="../Images/Spatial/03_Spatial.png" width="200"/><br \>
+<img src="../Images/Spatial/01_Spatial.png" width="300"/><br \>
 </div>
 
-![](../Images/Spatial/01_Spatial.png)
-![](../Images/Spatial/02_Spatial.png)\
+![](../Images/Spatial/01_Spatial.png)\
 <small>X rotation by 30 degrees</small>
 
 #### 2. Rotation about the **Y-axis**:
