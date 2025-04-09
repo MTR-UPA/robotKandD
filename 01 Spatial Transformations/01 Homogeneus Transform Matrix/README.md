@@ -42,28 +42,7 @@ Where:
 
 The individual rotation matrices are:
 
-$$R_X(\alpha) = \begin{bmatrix}
-1 & 0 & 0 \\
-0 & \cos\alpha & -\sin\alpha \\
-0 & \sin\alpha & \cos\alpha
-\end{bmatrix}$$
-
-\[
-R_Y(\beta) = \begin{bmatrix}
-\cos\beta & 0 & \sin\beta \\
-0 & 1 & 0 \\
--\sin\beta & 0 & \cos\beta
-\end{bmatrix}
-\]
-
-\[
-R_Z(\gamma) = \begin{bmatrix}
-\cos\gamma & -\sin\gamma & 0 \\
-\sin\gamma & \cos\gamma & 0 \\
-0 & 0 & 1
-\end{bmatrix}
-\]
-
+![](../../Images/HTM/00_HTM.svg)
 ---
 
 ### Key Characteristics
