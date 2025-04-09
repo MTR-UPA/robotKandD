@@ -83,23 +83,28 @@ The following image illustrates the result of rotating a reference frame by 30 d
 
 <div align="center">
 <img src="../Images/Spatial/04_Spatial.png" width="500"/><br \>
-<small>X rotation by 30 degrees</small>
+<small>Y rotation by 30 degrees</small>
 </div>
 
 To generate the image above, you can run the `YRotation` script. I encourage you to modify the rotation angle and observe how the reference frame and its corresponding rotation matrix change.
 
 #### 3. Rotation about the **Z-axis**:
 
+<div align="center">
+<img src="../Images/Spatial/05_Spatial.png" width="300"/><br \>
+</div>
 
-$R_y(\theta) = \begin{bmatrix}\cos\theta &0 & \sin\theta \\0 & 1 & 0 \\-\sin\theta & 0 & \cos\theta \end{bmatrix}$ 
-\[
-R_z(\theta) =
-\begin{pmatrix}
-\cos\theta & -\sin\theta & 0 \\
-\sin\theta & \cos\theta & 0 \\
-0 & 0 & 1
-\end{pmatrix}
-\]
+
+The following image illustrates the result of rotating a reference frame by 30 degrees about the Z-axis, along with the corresponding rotation matrix. Note that the direction of rotation follows the right-hand rule.
+
+<div align="center">
+<img src="../Images/Spatial/06_Spatial.png" width="500"/><br \>
+<small>Z rotation by 30 degrees</small>
+</div>
+
+To generate the image above, you can run the `ZRotation` script. I encourage you to modify the rotation angle and observe how the reference frame and its corresponding rotation matrix change.
+
+
 
 ---
 
