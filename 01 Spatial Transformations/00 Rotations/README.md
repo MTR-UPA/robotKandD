@@ -1,4 +1,5 @@
-# SPATIAL TRANSFORMATIONS
+
+<h1 align="center">SPATIAL TRANSFORMATIONS</h1>
 
 ## Rotation Matrix
 
@@ -75,3 +76,4 @@ To generate the image above, you can run the `ZRotation` script. I encourage you
 - Describing the orientation of a rigid body in space.
 - In robotics, to define the **orientation of links** or the end-effector.
 - In 3D graphics, to rotate models and cameras.
+
