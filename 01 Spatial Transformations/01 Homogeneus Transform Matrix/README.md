@@ -30,16 +30,15 @@ This convention is useful because it allows a complex orientation to be broken d
 
 The XYZ rotation matrix is obtained by multiplying three elementary rotation matrices:
 
-\[
-R = R_Z(\gamma) \cdot R_Y(\beta) \cdot R_X(\alpha)
-\]
+$$R = R_Z(\gamma) \cdot R_Y(\beta) \cdot R_X(\alpha)$$
+
 
 Where:
 
-- \( R_X(\alpha) \) is the rotation about the X-axis,
-- \( R_Y(\beta) \) is the rotation about the Y-axis,
-- \( R_Z(\gamma) \) is the rotation about the Z-axis,
-- and \( \alpha, \beta, \gamma \) are the rotation angles in radians (or degrees, depending on the context).
+- $R_X(\alpha)$ is the rotation about the X-axis,
+- $R_Y(\beta)$ is the rotation about the Y-axis,
+- $R_Z(\gamma)$ is the rotation about the Z-axis,
+- and $\alpha, \beta, \gamma$ are the rotation angles in radians (or degrees, depending on the context).
 
 The individual rotation matrices are:
 
