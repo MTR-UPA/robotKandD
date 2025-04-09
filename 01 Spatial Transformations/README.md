@@ -32,3 +32,88 @@ $$\large \mathbf{k} = \mathbf{j} \times \mathbf{i}$$
 This reversed cross product ensures that the three vectors are mutually perpendicular and follow the left-hand rule orientation, where the thumb, index, and middle fingers of the left hand point in the directions of the X, Y, and Z axes, respectively.
 
 These coordinate systems are crucial for defining and controlling the orientation and movement of robots, and the choice between a right-handed or left-handed system can have a significant impact on the design and programming of robotic algorithms.
+
+**Note:** From this point on, all reference frames to be used will follow a right-handed orientation.
+
+***
+
+## Rotation Matrix
+
+In geometry and robotics, a **3D rotation matrix** is a **3×3 orthogonal matrix** used to **rotate vectors or coordinate systems** in three-dimensional space without changing their magnitude—only their orientation.
+
+
+### 🔧 **Technical Definition:**
+
+A **3D rotation matrix** \( R \) satisfies the following properties:
+
+- $ R \in \mathbb{R}^{3 \times 3}$
+- $R^T R = I$ it is orthonormal
+- $ \det(R) = 1$ (it preserves orientation; it's a pure rotation)
+
+---
+
+### 📐 **Rotations around the principal axes:**
+
+#### 1. Rotation about the **X-axis**:
+
+$ R_x(\theta) = \begin{bmatrix}1 &0 & 0 \\
+                 0 & \cos\theta & -\sin\theta \\
+                 0 & \sin\theta & \cos\theta \end{bmatrix}$ 
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="../Images/01_Spatial.png" width="200"/><br>
+      <small><strong>Rotation about the X-axis by 30 degrees</strong></small>
+    </td>
+    <td align="center">
+      <strong>Rotation Matrix:</strong><br>
+      <code>
+      R<sub>x</sub>(θ) = 
+      [ [1, 0, 0],<br>
+        [0, cosθ, -sinθ],<br>
+        [0, sinθ, cosθ] ]
+      </code>
+    </td>
+  </tr>
+</table>
+
+
+#### 2. Rotation about the **Y-axis**:
+\[
+R_y(\theta) =
+\begin{pmatrix}
+\cos\theta & 0 & \sin\theta \\
+0 & 1 & 0 \\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}
+\]
+
+#### 3. Rotation about the **Z-axis**:
+\[
+R_z(\theta) =
+\begin{pmatrix}
+\cos\theta & -\sin\theta & 0 \\
+\sin\theta & \cos\theta & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+\]
+
+---
+
+### 📦 **What is it used for?**
+
+- Transforming vectors from one coordinate system to another.
+- Describing the orientation of a rigid body in space.
+- In robotics, to define the **orientation of links** or the end-effector.
+- In 3D graphics, to rotate models and cameras.
+
+---
+
+### 🧠 **Practical Example:**
+
+If you have a point \( P = [x, y, z]^T \) and want to rotate it around the Z-axis by an angle \( \theta \), you simply compute:
+
+\[
+P_{\text{rotated}} = R_z(\theta) \cdot P
+\]
