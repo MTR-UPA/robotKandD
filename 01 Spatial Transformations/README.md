@@ -60,11 +60,11 @@ A **3D rotation matrix** \( R \) satisfies the following properties:
 <img src="../Images/Spatial/01_Spatial.png" width="300"/><br \>
 </div>
 
-![](../Images/Spatial/02_Spatial.png)
-
 <div align="center">
-    <small>X rotation by 30 degrees</small>
-<\div>
+<img src="../Images/Spatial/02_Spatial.png" width="500"/><br \>
+<small>X rotation by 30 degrees</small>
+</div>
+
 
 #### 2. Rotation about the **Y-axis**:
 
