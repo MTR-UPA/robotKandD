@@ -30,7 +30,7 @@ This convention is useful because it allows a complex orientation to be broken d
 
 The XYZ rotation matrix is obtained by multiplying three elementary rotation matrices:
 
-$$R = R_Z(\gamma) \cdot R_Y(\beta) \cdot R_X(\alpha)$$
+$$\huge R = R_Z(\gamma) \cdot R_Y(\beta) \cdot R_X(\alpha)$$
 
 
 Where:
@@ -42,13 +42,11 @@ Where:
 
 The individual rotation matrices are:
 
-\[
-R_X(\alpha) = \begin{bmatrix}
+$$R_X(\alpha) = \begin{bmatrix}
 1 & 0 & 0 \\
 0 & \cos\alpha & -\sin\alpha \\
 0 & \sin\alpha & \cos\alpha
-\end{bmatrix}
-\]
+\end{bmatrix}$$
 
 \[
 R_Y(\beta) = \begin{bmatrix}
