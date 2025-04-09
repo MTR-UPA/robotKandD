@@ -59,7 +59,8 @@ A **3D rotation matrix** \( R \) satisfies the following properties:
 $R_x(\theta) = \begin{bmatrix}1 &0 & 0 \\0 & \cos\theta & -\sin\theta \\0 & \sin\theta & \cos\theta \end{bmatrix}$ 
 
 ![](../Images/01_Spatial.png)
-![](../Images/02_Spatial.png)
+![](../Images/02_Spatial.png)\
+<small>X rotation by 30 degrees</small>
 
 #### 2. Rotation about the **Y-axis**:
 \[
