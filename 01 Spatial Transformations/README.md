@@ -46,9 +46,9 @@ In geometry and robotics, a **3D rotation matrix** is a **3×3 orthogonal matrix
 
 A **3D rotation matrix** \( R \) satisfies the following properties:
 
-- $ R \in \mathbb{R}^{3 \times 3}$
+- $R \in \mathbb{R}^{3 \times 3}$
 - $R^T R = I$
-- $ \det(R) = 1$ 
+- $\det(R) = 1$ 
 
 ---
 
