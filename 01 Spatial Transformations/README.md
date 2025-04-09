@@ -33,6 +33,8 @@ $$\large \mathbf{k} = \mathbf{j} \times \mathbf{i}$$
 
 This reversed cross product ensures that the three vectors are mutually perpendicular and follow the left-hand rule orientation, where the thumb, index, and middle fingers of the left hand point in the directions of the X, Y, and Z axes, respectively.
 
+*** 
+
 These coordinate systems are crucial for defining and controlling the orientation and movement of robots, and the choice between a right-handed or left-handed system can have a significant impact on the design and programming of robotic algorithms.
 
 **Note:** From this point on, all reference frames to be used will follow a right-handed orientation.
