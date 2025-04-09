@@ -4,7 +4,7 @@
 
 In robotics, a **reference frame** (or **coordinate system**) is a set of axes (typically **X**, **Y**, and **Z**) used to define the position and orientation of an object or a set of objects in three-dimensional space. It is essential for describing the movement and interactions of a robot, as it provides a context for measuring the coordinates of points, vectors, and transformations. Two of the most common coordinate systems are **right-handed** and **left-handed**, which mainly differ in the orientation of their axes. These terms come from the **right-hand** and **left-hand** rules, respectively, which define the direction of the axes in a three-dimensional system.
 <div align="center">
-<img src="../Images/00_Spatial.png" width="500"/><br \>
+<img src="../Images/Spatial/00_Spatial.png" width="500"/><br \>
 <small>Dextrorotative and Levorotative Systems</small>
 </div>
 
@@ -56,13 +56,18 @@ A **3D rotation matrix** \( R \) satisfies the following properties:
 
 #### 1. Rotation about the **X-axis**:
 
-$R_x(\theta) = \begin{bmatrix}1 &0 & 0 \\0 & \cos\theta & -\sin\theta \\0 & \sin\theta & \cos\theta \end{bmatrix}$ 
+<div align="center">
+<img src="../Images/Spatial/03_Spatial.png" width="200"/><br \>
+</div>
 
-![](../Images/01_Spatial.png)
-![](../Images/02_Spatial.png)\
+![](../Images/Spatial/01_Spatial.png)
+![](../Images/Spatial/02_Spatial.png)\
 <small>X rotation by 30 degrees</small>
 
 #### 2. Rotation about the **Y-axis**:
+
+$R_x(\theta) = \begin{bmatrix}1 &0 & 0 \\0 & \cos\theta & -\sin\theta \\0 & \sin\theta & \cos\theta \end{bmatrix}$ 
+
 \[
 R_y(\theta) =
 \begin{pmatrix}
