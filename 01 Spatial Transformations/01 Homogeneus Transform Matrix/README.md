@@ -42,7 +42,7 @@ Where:
 
 The individual rotation matrices are:
 
-![](../../Images/HTM/00_HTM.svg)
+![](../../Images/HTM/CodeCogsEqn.png)
 ---
 
 ### Key Characteristics
