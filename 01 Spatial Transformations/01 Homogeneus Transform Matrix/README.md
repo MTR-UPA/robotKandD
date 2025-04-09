@@ -40,17 +40,20 @@ Where:
 - $R_Z(\gamma)$ is the rotation about the Z-axis,
 - and $\alpha, \beta, \gamma$ are the rotation angles in radians (or degrees, depending on the context).
 
-The individual rotation matrices are:
-
-<div align="center">
-<img src="../../Images/HTM/00_HTM.png"/><br \>
-</div>
+The final rotation matrix given by:
 
 <div align="center">
 <img src="https://latex.codecogs.com/png.image?\LARGE&space;\dpi{150}\bg{white}$$R=R_Z(\gamma)R_Y(\beta)R_X(\alpha)=\begin{bmatrix}\cos\gamma&-\sin\gamma&0\\\sin\gamma&\cos\gamma&0\\0&0&1\end{bmatrix}\begin{bmatrix}\cos\beta&0&\sin\beta\\0&1&0\\-\sin\beta&0&\cos\beta\end{bmatrix}\begin{bmatrix}1&0&0\\0&\cos\alpha&-\sin\alpha\\0&\sin\alpha&\cos\alpha\end{bmatrix}$$"/><br \>
 </div>
 
----
+The final matrix is: 
+
+<div align="center">
+<img src="https://latex.codecogs.com/png.image?\large&space;\dpi{150}\bg{white}R=\begin{bmatrix}C_\gamma&space;C_\beta&C_\gamma&space;S_\beta&space;S_\alpha-S_\gamma&space;C_\alpha&C_\gamma&space;S_\beta&space;C_\alpha&plus;S_\gamma&space;S_\alpha\\S_\gamma&space;C_\beta&S_\gamma&space;S_\beta&space;S_\alpha&plus;C_\gamma&space;C_\alpha&S_\gamma&space;S_\beta&space;C_\alpha-C_\gamma&space;S_\alpha\\-S_\beta&C_\beta&space;S_\alpha&C_\beta&space;C_\alpha\end{bmatrix}"/><br \>
+</div>
+
+
+
 
 
 ### Key Characteristics
@@ -60,6 +63,3 @@ The individual rotation matrices are:
 - **Euler Angle Ambiguity**: Like other Euler angle representations, XYZ rotations can suffer from **singularities** or **gimbal lock** (e.g., when two rotation axes align).
 - **Widely used in animation and kinematics**: The XYZ sequence is popular in graphics engines and for controlling articulated robotic systems.
 
----
-
-Would you like to see how the full XYZ rotation matrix is constructed from the three angles, or how it is applied in a robotic arm's forward kinematics?
