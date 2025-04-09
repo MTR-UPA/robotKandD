@@ -44,9 +44,14 @@ The individual rotation matrices are:
 
 <div align="center">
 <img src="../../Images/HTM/00_HTM.png"/><br \>
-
 </div>
+
+<div align="center">
+<img src="https://latex.codecogs.com/png.image?\LARGE&space;\dpi{150}\bg{white}$$R=R_Z(\gamma)R_Y(\beta)R_X(\alpha)=\begin{bmatrix}\cos\gamma&-\sin\gamma&0\\\sin\gamma&\cos\gamma&0\\0&0&1\end{bmatrix}\begin{bmatrix}\cos\beta&0&\sin\beta\\0&1&0\\-\sin\beta&0&\cos\beta\end{bmatrix}\begin{bmatrix}1&0&0\\0&\cos\alpha&-\sin\alpha\\0&\sin\alpha&\cos\alpha\end{bmatrix}$$"/><br \>
+</div>
+
 ---
+
 
 ### Key Characteristics
 
