@@ -46,9 +46,9 @@ In geometry and robotics, a **3D rotation matrix** is a **3×3 orthogonal matrix
 
 A **3D rotation matrix** \( R \) satisfies the following properties:
 
-- $R \in \mathbb{R}^{3 \times 3}$
-- $R^T R = I$
-- $\det(R) = 1$ 
+- $\large R \in \mathbb{R}^{3 \times 3}$
+- $\large R^T R = I$
+- $\large \det(R) = 1$ 
 
 ---
 
@@ -60,23 +60,13 @@ $ R_x(\theta) = \begin{bmatrix}1 &0 & 0 \\
                  0 & \cos\theta & -\sin\theta \\
                  0 & \sin\theta & \cos\theta \end{bmatrix}$ 
 
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="../Images/01_Spatial.png" width="200"/><br>
-      <small><strong>Rotation about the X-axis by 30 degrees</strong></small>
-    </td>
-    <td align="center">
-      <strong>Rotation Matrix:</strong><br>
-      <code>
-      R<sub>x</sub>(θ) = 
-      [ [1, 0, 0],<br>
-        [0, cosθ, -sinθ],<br>
-        [0, sinθ, cosθ] ]
-      </code>
-    </td>
-  </tr>
-</table>
+<div>
+  <img src="../Images/01_Spatial.png" width="200"/><br>
+   <small>
+   <img src="../Images/02_Spatial.png" width="200"/><br>
+   <small><strong>Rotation about the X-axis by 30 degrees</strong></small>
+</div>
+
 
 
 #### 2. Rotation about the **Y-axis**:
