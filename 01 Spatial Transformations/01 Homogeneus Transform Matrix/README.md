@@ -43,7 +43,7 @@ Where:
 The individual rotation matrices are:
 
 <div align="center">
-<img src="../../Images/HTM/00_HTM.png" width="500"/><br \>
+<img src="../../Images/HTM/00_HTM.png"/><br \>
 
 </div>
 ---
