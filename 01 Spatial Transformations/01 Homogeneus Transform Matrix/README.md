@@ -53,13 +53,11 @@ The final matrix is:
 </div>
 
 
-
-
-
 ### Key Characteristics
 
 - **Order matters**: The XYZ rotation is **not commutative**—changing the order of rotations results in a different final orientation.
 - **Intuitive**: Especially in systems with fixed axes where the object rotates with respect to a global reference frame.
 - **Euler Angle Ambiguity**: Like other Euler angle representations, XYZ rotations can suffer from **singularities** or **gimbal lock** (e.g., when two rotation axes align).
 - **Widely used in animation and kinematics**: The XYZ sequence is popular in graphics engines and for controlling articulated robotic systems.
+- **Each rotation matrix its a group of unit vectors**: 
 

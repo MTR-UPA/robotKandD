@@ -14,6 +14,9 @@ A **3D rotation matrix** \( R \) satisfies the following properties:
 - $\large R^T R = I$
 - $\large \det(R) = 1$ 
 
+
+Consider two reference frames initially aligned in both position and orientation. When one of the frames is rotated about one or more axes, the corresponding rotation matrix can be determined by computing the dot product between the unit vectors that define the bases of the reference frames before and after the rotation.
+
 ---
 
 ### 📐 **Rotations around the principal axes:**
@@ -67,7 +70,6 @@ The following image illustrates the result of rotating a reference frame by 30 d
 To generate the image above, you can run the `ZRotation` script. I encourage you to modify the rotation angle and observe how the reference frame and its corresponding rotation matrix change.
 
 
-
 ---
 
 ### 📦 **What is it used for?**
@@ -76,4 +78,5 @@ To generate the image above, you can run the `ZRotation` script. I encourage you
 - Describing the orientation of a rigid body in space.
 - In robotics, to define the **orientation of links** or the end-effector.
 - In 3D graphics, to rotate models and cameras.
+
 
