@@ -2,7 +2,7 @@
 
 This section studies the kinematics of a robotic manipulator, focusing on the relationship between joint variables and the pose of the end-effector. In robotics, kinematics is divided into two main problems:
 
-![Kinematics Schema](img/Kinematics%20Schema.png)
+<img src="img/Kinematics%20Schema.png" alt="Kinematics Schema" width="500">
 
 
 - Forward kinematics: given the joint variables, determine the position and orientation of the robot end-effector.
@@ -27,6 +27,30 @@ For conventional DH parameters, each link is described by:
 
 That is why, by successively multiplying the DH steps, we obtain:
 
+$$
+^{i-1}T_{i} =
+\begin{bmatrix}
+\cos(\theta_i) & -\sin(\theta_i) & 0 & 0 \\
+\sin(\theta_i) & \cos(\theta_i) & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & d_i \\
+0 & 0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}
+1 & 0 & 0 & a_i \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & \cos(\alpha_i) & -\sin(\alpha_i) & 0 \\
+0 & \sin(\alpha_i) & \cos(\alpha_i) & 0 \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
 
 $$
 ^{i-1}T_{i} =
