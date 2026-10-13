@@ -14,7 +14,7 @@ The direct kinematic problem consists of computing the homogeneous transformatio
 
 For a serial robot with n joints, the pose is obtained as a product of transformations:
 
-T = T0,1(q1) T1,2(q2) ... Tn-1,n(qn)
+$$T = ^0T_1 * ^1T_2 ... ^{n-1}T_n$$
 
 where each T(i-1),i is a homogeneous transformation matrix defined by the Denavit-Hartenberg (DH) parameters.
 
@@ -62,7 +62,11 @@ $$
 \end{bmatrix}
 $$
 
+*Fig. 1. Conventional DH transformation matrix.*
+
 This allows us to compute the position and orientation of the tool with respect to the robot base.
+
+The function [transformA.m](transformA.m) implements this homogeneous transformation for a single robot link using the Denavit-Hartenberg parameters. It receives a vector in the form [theta, d, a, alpha], computes the corresponding sine and cosine terms, and returns the 4x4 matrix that describes the relative pose between two consecutive frames. This matrix is the basic building block used to assemble the full kinematic chain of a manipulator, where multiple link transforms are multiplied sequentially to obtain the end-effector pose.
 
 ### 2. Inverse Kinematics
 
@@ -111,5 +115,4 @@ The direct kinematic problem answers: "If I know the joint variables, where is t
 The inverse kinematic problem answers: "If I know the desired end-effector pose, what joint variables are needed?"
 
 Both are fundamental in robot mechanics and are the basis for motion planning and control.
-
 
